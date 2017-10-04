@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import AddStudent from './AddStudent';
-import ViewStudents from './ViewStudents';
+import AddBaby from './AddBaby';
+import ViewWords from './ViewWords';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 class App extends Component {
@@ -11,15 +11,15 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Student Rosters</h2>
+          <h2>Baby's First Words</h2>
         </div>
         <Router>
           <div>
-        <Link to="/add">Add New Student</Link>
-        <Link to="/view">View All Students</Link>
+        <Link to="/add">Add New Baby</Link>
+        <Link to="/view">View All Words</Link>
         <hr />
-        <Route exact path="/add" component={AddStudent} />
-        <Route  exact path="/view" component={ViewStudents}/> 
+        <Route exact path="/add" component={AddBaby} />
+        <Route  exact path="/view" component={ViewWords}/> 
           </div> 
 
 

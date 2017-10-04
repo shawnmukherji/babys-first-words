@@ -8,22 +8,22 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-let students = [
+let words = [
   {
-    name: 'Kanye'
+    name: 'Mom'
   },
   {
-    name: 'Jay-Z'
+    name: 'Dad'
   },
   {
-    name: 'P.Diddy'
+    name: 'Car'
   }
 ];
 
 
 
-app.get('/api/students/all', function (req, res){
-  res.json(students);
+app.get('/api/words/all', function (req, res){
+  res.json(words);
 });
 
 // Send every request to the React app

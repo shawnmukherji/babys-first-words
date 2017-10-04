@@ -1,19 +1,19 @@
 import React from 'react';
 import axios from 'axios';
 
-export default class ViewStudents extends React.Component{
+export default class ViewWords extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            students: []
+            words: []
         };
     }
     render(){
-        const studentsMap = this.state.students.map((student)=> <div>{student.name}</div>)
+        const wordsMap = this.state.words.map((words)=> <div>{words.name}</div>)
         return (
             <div>
-        <h3>ViewStudents</h3>
-        {studentsMap}
+        <h3>View Words</h3>
+        {wordsMap}
 
             </div>
         
